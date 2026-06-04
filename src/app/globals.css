@@ -132,3 +132,9 @@
 a[data-sidebar="menu-button"]:hover{
   background: var(--sidebar-accent) !important;
 }
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
