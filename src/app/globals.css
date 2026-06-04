@@ -126,6 +126,9 @@
   }
 }
 
-[data-active] {
+[data-active="false"] {
   background: none !important;
+}
+a[data-sidebar="menu-button"]:hover{
+  background: var(--sidebar-accent) !important;
 }
