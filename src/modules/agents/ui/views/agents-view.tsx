@@ -10,7 +10,7 @@ import { LoadingState } from "@/components/loading-state";
 
 import { columns } from "../components/columns";
 import { DataTable } from "@/components/data-table";
-import { DataPagination } from "../components/data-pagination";
+import { DataPagination } from "@/components/data-pagination";
 import { useAgentsFilters } from "../../hooks/use-agents-filters";
 
 export const AgentsView = () => {
