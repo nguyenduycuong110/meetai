@@ -1,6 +1,7 @@
 "use client";
 
 import { useSuspenseQuery } from "@tanstack/react-query";
+
 import { useTRPC } from "@/trpc/client";
 import { ErrorState } from "@/components/error-state";
 import { LoadingState } from "@/components/loading-state";
@@ -10,8 +11,8 @@ export const MeetingsView = () => {
   const { data } = useSuspenseQuery(trpc.meetings.getMany.queryOptions({}));
   
   return (
-    <div>
-      {JSON.stringify(data)}
+    <div className="overflow-x-scroll">
+      {/* {JSON.stringify(data)} */}
     </div>
   );
 };
